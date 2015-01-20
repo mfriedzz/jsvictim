@@ -4,13 +4,13 @@ var numberofvolunteers = prompt("How many Volunteers?");
 
 
 
-  function Victims2(fullname, phone, street) {
+ var Victims2 = function (fullname, phone, street) {
 	this.fullname = fullname;
 	this.phone = phone;
 	this.street = street;
 }
 
-function Volunteers2(fullname, phone, street){
+var Volunteers2 = function (fullname, phone, street){
 	this.fullname = fullname;
 	this.phone = phone;
 	this.street = street;
