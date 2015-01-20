@@ -2,11 +2,7 @@
 var numberofvictims = prompt("How many victims?");
 var numberofvolunteers = prompt("How many Volunteers?");
 
-// var Victims = {};
-var victimsArray = [];
-// var Volunteers = {};
-var volunteersArray =[];
-var 
+
 
   function Victims2(fullname, phone, street) {
 	this.fullname = fullname;
@@ -20,15 +16,23 @@ function Volunteers2(fullname, phone, street){
 	this.street = street;
 }
 
+// var Victims = {};
+var victimsArray = [];
+// var Volunteers = {};
+var volunteersArray =[];
+
+
+
 
 for (var i=0; i < numberofvictims.length; i++) {
 
 var fullname1 = prompt("What is the name of the first victim, Victim " + i);
-
+ 
 var phone1 = prompt("What is the phone number of victim " + i);
 
 var street1 = prompt("what is the street address of victim " + i);
 victimsArray[i] = new Victims2(fullname1, phone1, street1);
+
 }
 
 for (var x=0; x < numberofvolunteers.length; x++) {
@@ -42,21 +46,28 @@ for (var x=0; x < numberofvolunteers.length; x++) {
 }
 
 
-for (var x = 0; x < Victims2.length; x++) {
-    console.log(Victims2[x].fullname);
-    console.log(Victims2[x].phone);
-    console.log(Victims2[x].street);
+for (var x = 0; x < victimsArray.length; x++) {
+    console.log(victimsArray[x].fullname);
+    console.log(victimsArray[x].phone);
+    console.log(victimsArray[x].street);
 }
 
-// console.log ("Here are all the victims listed ");
-//  var victimsall = Victims2.map(function (list) { return list;} );
+for (var x = 0; x < volunteersArray.length; x++) {
+    console.log(volunteersArray[x].fullname);
+    console.log(volunteersArray[x].phone);
+    console.log(volunteersArray[x].street);
+}
+
+
+console.log ("Here are all the victims listed ");
+ var victimsall = victimsArray.map(function (list) { return list;} );
      
 
-//  console.log(victimsall);
+ console.log(victimsall);
 
-// console.log ("Here are all the volunteers Listed");
+console.log ("Here are all the volunteers Listed");
 
-// var volunteersall = Volunteers2.map(function (list){ return list;} );
+var volunteersall = volunteersArray.map(function (list){ return list;} );
        
  
-//  console.log(victimsall);
+ console.log(volunteersall);
